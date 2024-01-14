@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Intro</title>
+</head>
+<body>
+    <div id="container">
+        <nav class="navi">
+           
+            <!--Snap logo-->
+            <div class="snap">
+                <img src="images/logo.svg" alt="">
+            </div>
+            <!--The drop menu part-->
+            <div class="input">
+                <input type="checkbox" id="checkbox" onclick="myBox()">
+                <label for="checkbox" class="toggle">
+                    <div class="bars" id="bar1"></div>
+                    <div class="bars" id="bar2"></div>
+                    <div class="bars" id="bar3"></div>
+                </label>
+            </div>
+            <!--Menus-->
+            <div class="menu" id="menu-show">
+                <div class="add">
+                    <button class="features" onclick="myUse()">Features <img src="images/icon-arrow-down.svg" alt=""></button>
+                    <section id="drop-down" class="items">
+                        <ul>
+                            <li><a href=""><img src="images/icon-todo.svg" alt=""> Todo List</a></li>
+                            <li><a href=""><img src="images/icon-calendar.svg" alt="">  Calender</a></li>
+                            <li><a href=""><img src="images/icon-reminders.svg" alt="">  Reminder</a></li>
+                            <li><a href=""><img src="images/icon-planning.svg" alt="">  Planning</a></li>
+                  
+                        </ul>
+                    </section>
+                </div>
+
+                <div class="add">
+                    <section>
+                        <button class="features" onclick="display()">Company <img src="images/icon-arrow-down.svg" alt=""></button>
+                        <div id="second" class="items">
+                            <ul>
+                                <li>History</li>
+                                <li>Our Team</li>
+                                <li>Blog</li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+
+                <section class="add">
+                    <button class="features">Career</button>
+               
+                </section>
+
+                <section class="add">
+                    <Button class="features">About</Button>
+                </section>
+
+                <div id="log">
+                    <button class="login">Login</button>
+                    <button class="login">Register</button>
+                </div>
+            </div>
+           
+        </nav>
+       
+        <!--The body of the site-->
+        <div id="bodi">
+            <span id="bodi-content">
+                <div class="cut">
+                    <h1 class="header1">Make remote work</h1>
+                    <p id="text">Get your in sync,no matter your location. Streamline processes,create team rituals,and watch productivity soar </p>
+                    <button class="learn">Learn more</button>
+                </div>
+                <div class="marka">
+                    <a href="" id="marka"><img src="images/client-databiz.svg" alt="" id="last "></a>
+                    <a href="" id="marka"><img src="images/client-audiophile.svg" alt="" id="last"></a>
+                    <a href="" id="marka"><img src="images/client-meet.svg" alt="" id="last"></a>
+                    <a href="" id="marka"><img src="images/client-maker.svg" alt="" id="last"></a>
+                </div>
+            </span>
+            <span id="bodi-content">
+                <img src="images/image-hero-desktop.png" alt="" id="image" class="redi">
+            </span>
+        </div>
+      
+    </div>
+    <script>
+    myUse();
+    function myUse(){
+    document.getElementById("drop-down").classList.toggle("open")
+};
+    display();
+    function display(){
+    document.getElementById("second").classList.toggle("open")
+};   
+    myBox();
+    function myBox(){
+    document.getElementById("menu-show").classList.toggle("show")
+}
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>
