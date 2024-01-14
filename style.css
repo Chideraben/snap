@@ -186,7 +186,7 @@ a{
 }
 
 
-@media  screen and (width<600px) {
+@media  screen and (max-width:600px) {
     #log{
         display: block;
     }
@@ -237,7 +237,7 @@ a{
         display: block;
         z-index: 90;
         position: absolute;
-        left: 495px;
+        left: 300px;
         top: 1px;
     }
     #checkbox{
